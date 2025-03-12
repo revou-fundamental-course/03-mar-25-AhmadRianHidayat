@@ -7,7 +7,7 @@
 }
 body {
   /* background-color: gray; */
-  width: 100vw;
+  width: 100%;
 }
 .mainHeader {
   display: flex;
@@ -64,12 +64,12 @@ a{
 /* section profile */
 .ourprofile__myprofile {
   display: flex;
-  /* border: 1px solid white; */
+  border: 1px solid white;
   .myprofile__container {
     color: white;
     width: 100%;
     padding: 20px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     display: flex;
     gap: 40px;
     /* flex-direction: column; */
@@ -113,7 +113,7 @@ a{
 .ourProfile {
   background-color: rgb(37, 76, 125);
   padding: 100px 100px 140px 100px;
-  /* border: 1px solid black; */
+  /* border: 5px solid black; */
   display: flex;
   background-image: url("../assets/wave.svg");
   background-repeat: no-repeat;
@@ -214,5 +214,26 @@ a{
 
 
 @media screen and (max-width: 480px ){
-  flex-direction: column;
+  .mainHeader {
+    flex-direction: column;
+    div{
+      margin: 10px 0;
+    }
+  }
+  .home {
+    img {
+      width: 300px;
+      border-radius: 50%;
+      /* background-color: rgba(0, 0, 0, 0.45); */
+    }
+  }
+  .myprofile__container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ourprofile__myprofile{
+    flex-direction: column;
+    align-items: center;
+  }
 }
