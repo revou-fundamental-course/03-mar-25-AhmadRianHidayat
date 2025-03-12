@@ -33,7 +33,7 @@
         <a href="#">Home</a>
         <a href="#mySocialMedia">Our Profile</a>
         <a href="#">Achievement</a>
-        <a href="#">Message</a>
+        <a href="#message">Message</a>
       </div>
     </header>
     <!-- <hr /> -->
@@ -142,10 +142,61 @@
           <div class="verticalLine"></div>
           <h2>Drawing</h2>
           <div class="content__drawing">
-            <img src="assets/drawing/benimaru.jpg" alt="benimaru" />
-            <img src="assets/drawing/blackwhite.jpg" alt="benimaru" />
-            <img src="assets/drawing/rimuru.jpg" alt="benimaru" />
-            <img src="assets/drawing/tanjiro.jpg" alt="benimaru" />
+            <img
+              class="drawing-banner"
+              src="assets/drawing/benimaru.jpg"
+              alt="drawing"
+            />
+            <img
+              class="drawing-banner"
+              src="assets/drawing/blackwhite.jpg"
+              alt="drawing"
+            />
+            <img
+              class="drawing-banner"
+              src="assets/drawing/rimuru.jpg"
+              alt="drawing"
+            />
+            <img
+              class="drawing-banner"
+              src="assets/drawing/tanjiro.jpg"
+              alt="drawing"
+            />
+            <img
+              class="drawing-banner"
+              src="assets/drawing/icon1.jpg"
+              alt="drawing"
+            />
+            <img
+              class="drawing-banner"
+              src="assets/drawing/icon2.jpg"
+              alt="drawing"
+            />
+            <img
+              class="drawing-banner"
+              src="assets/drawing/icon3.jpg"
+              alt="drawing"
+            />
+            <img
+              class="drawing-banner"
+              src="assets/drawing/icon4.jpg"
+              alt="drawing"
+            />
+            <img
+              class="drawing-banner"
+              src="assets/drawing/icon5.jpg"
+              alt="drawing"
+            />
+            <img
+              class="drawing-banner"
+              src="assets/drawing/icon6.jpg"
+              alt="drawing"
+            />
+            <img
+              class="drawing-banner"
+              src="assets/drawing/icon7.jpg"
+              alt="drawing"
+            />
           </div>
           <p>
             Do you want to make your own custom drawing ?, contact me on my
@@ -154,37 +205,49 @@
           <div class="verticalLine"></div>
           <h2>Progamming</h2>
           <div class="content__progamming">
-            <img src="assets/web/beritamuweb.png" alt="" />
-            <img src="assets/web/tokoshop web.png" alt="" />
+            <img class="web-banner" src="assets/web/beritamuweb.png" alt="" />
+            <img class="web-banner" src="assets/web/tokoshop web.png" alt="" />
             <p>This is simple web that i ever made.</p>
           </div>
           <div class="verticalLine"></div>
           <h2>Still Continuing...</h2>
         </div>
       </section>
-      <!-- <button class="totop">Back to Top</button> -->
-      <section class="form">
+      <button id="totop">Back to Top</button>
+      <section class="formsection" id="message">
         <h2>Ask me</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" /><br />
-          <label for="birthday">Birthday:</label>
-          <input type="date" id="birthday" name="birthday" /><br />
-          <label for="gender">Gender :</label>
-           <input type="radio" id="female" name="gender" value="female" />  
-          <label for="female">perempuan</label>
-           <input type="radio" id="male" name="gender" value="male" />  
-          <label for="male">laki-laki</label><br />
-          <label for="message">Message :</label><br />
-          <textarea id="message" name="message" rows="4" cols="30"></textarea
-          ><br />
-          <button type="submit">Send</button>
-        </form>
+        <div class="container-formsection">
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" /><br />
+            <label for="birthday">Birthday :</label>
+            <input type="date" id="birthday" name="birthday" /><br />
+            <label for="gender">Gender :</label><br />
+             <input type="radio" id="female" name="gender" value="female" />  
+            <label for="female">perempuan</label>
+             <input type="radio" id="male" name="gender" value="male" />  
+            <label for="male">laki-laki</label><br />
+            <label for="message">Message :</label><br />
+            <textarea id="message" name="message" rows="4" cols="30"></textarea
+            ><br />
+            <button type="submit">Send</button>
+          </form>
+          <div class="formresult">
+            <p>Name :</p>
+            <p>Birthday :</p>
+            <p>Gender :</p>
+            <p>Perempuan :</p>
+            <p>Message :</p>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- main footer -->
-    <footer></footer>
+    <footer>
+      <h3>Create by : Ahmad Rian Hidayat&#169</h3>
+      <p>thanks to : Revou</p>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
