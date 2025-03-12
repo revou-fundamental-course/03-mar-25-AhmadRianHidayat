@@ -3,7 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Profile</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon kepala.png" />
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- link css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -19,16 +35,80 @@
         <a href="#">Message</a>
       </div>
     </header>
-    <hr />
+    <!-- <hr /> -->
 
     <!-- main content -->
-    <main>
-      <section>
-        <p>halo dek</p>
+    <main class="main">
+      <section class="home">
+        <div>
+          <h1>Halo Tuan, Selamat Datang di Website Saya</h1>
+          <p>Ini adalah website portofolio saya...</p>
+        </div>
+        <img src="assets/icon kepala.png" alt="profile" />
+      </section>
+      <section class="ourProfile">
+        <h1>Tentang Saya</h1>
+        <div class="ourprofile__myprofile">
+          <img src="assets/foto saya.jpg" alt="" />
+          <div class="myprofile__container">
+            <div class="myprofile__detail">
+              <div>
+                <h1>Ahmad Rian Hidayat</h1>
+                <i>Role : an ordinary person</i>
+              </div>
+              <div>
+                <p>Hobby : Drawing</p>
+                <p>Age : 21</p>
+                <p>Address : **private**</p>
+                <p>Phone Number : **private**</p>
+                <p>Ambition : Progammer & Artist</p>
+              </div>
+              <div>
+                <h3>My social media :</h3>
+                <a href="https://www.instagram.com/ahmadrianhidayattt/"
+                  ><i class="fa-brands fa-instagram"></i> Instagram</a
+                >
+              </div>
+            </div>
+            <div class="myprofile__stats">
+              <h2>my stats :</h2>
+              <label for="logic">logic : </label>
+              <div>
+                <progress id="logic" value="80" max="100"></progress>
+                <span>80%</span>
+              </div>
+              <label for="communication">communication : </label>
+              <div>
+                <progress id="communication" value="30" max="100"></progress>
+                <span>30%</span>
+              </div>
+              <label for="social">social : </label>
+              <div>
+                <progress id="social" value="20" max="100"></progress>
+                <span>20%</span>
+              </div>
+              <label for="energy">energy : </label>
+              <div>
+                <progress id="energy" value="80" max="100"></progress>
+                <span>80%</span>
+              </div>
+              <label for="creativity">creativity : </label>
+              <div>
+                <progress id="creativity" value="75" max="100"></progress>
+                <span>30%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ourprofile__pontent">
+          <img src="assets/foto saya.jpg" alt="" />
+          <div class="verticalLine"></div>
+        </div>
       </section>
     </main>
 
     <!-- main footer -->
     <footer></footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
