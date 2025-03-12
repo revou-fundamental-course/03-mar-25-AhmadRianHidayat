@@ -27,10 +27,11 @@
     <!-- main header -->
     <header class="mainHeader">
       <!-- logo -->
-      <div class="logo"></div>
+      <!-- <div class="logo"></div> -->
+      <h2>MyProfile</h2>
       <div>
         <a href="#">Home</a>
-        <a href="#">Our Profile</a>
+        <a href="#mySocialMedia">Our Profile</a>
         <a href="#">Achievement</a>
         <a href="#">Message</a>
       </div>
@@ -46,8 +47,8 @@
         </div>
         <img src="assets/icon kepala.png" alt="profile" />
       </section>
-      <section class="ourProfile">
-        <h1>Tentang Saya</h1>
+      <section class="ourProfile" id="mySocialMedia">
+        <h1>About Me :</h1>
         <div class="ourprofile__myprofile">
           <img src="assets/foto saya.jpg" alt="" />
           <div class="myprofile__container">
@@ -65,14 +66,50 @@
               </div>
               <div>
                 <h3>My social media :</h3>
-                <a href="https://www.instagram.com/ahmadrianhidayattt/"
+                <a
+                  href="https://www.instagram.com/ahmadrianhidayattt/"
+                  target="_blank"
                   ><i class="fa-brands fa-instagram"></i> Instagram</a
+                >
+                <a href="https://www.linkedin.com/in/ahmadrh31/" target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i> Linkedin</a
+                >
+                <a href="https://github.com/ARianHidayat" target="_blank"
+                  ><i class="fa-brands fa-square-github"></i> Github</a
                 >
               </div>
             </div>
             <div class="myprofile__stats">
-              <h2>my stats :</h2>
-              <label for="logic">logic : </label>
+              <h2>my stats (hardskill) :</h2>
+              <label for="resilience">resilience : </label>
+              <div>
+                <progress id="resilience" value="80" max="100"></progress>
+                <span>80%</span>
+              </div>
+              <label for="concentration">concentration : </label>
+              <div>
+                <progress id="concentration" value="86" max="100"></progress>
+                <span>86%</span>
+              </div>
+              <label for="adaptation">adaptation : </label>
+              <div>
+                <progress id="adaptation" value="50" max="100"></progress>
+                <span>50%</span>
+              </div>
+              <label for="humor">humor : </label>
+              <div>
+                <progress id="humor" value="45" max="100"></progress>
+                <span>45%</span>
+              </div>
+              <label for="luck">luck : </label>
+              <div>
+                <progress id="luck" value="65" max="100"></progress>
+                <span>65%</span>
+              </div>
+            </div>
+            <div class="myprofile__stats">
+              <h2>my stats (softskill) :</h2>
+              <label for="resilience">logic : </label>
               <div>
                 <progress id="logic" value="80" max="100"></progress>
                 <span>80%</span>
@@ -100,10 +137,49 @@
             </div>
           </div>
         </div>
-        <div class="ourprofile__pontent">
-          <img src="assets/foto saya.jpg" alt="" />
+        <div class="ourprofile__content">
+          <h2>what can i do ?</h2>
           <div class="verticalLine"></div>
+          <h2>Drawing</h2>
+          <div class="content__drawing">
+            <img src="assets/drawing/benimaru.jpg" alt="benimaru" />
+            <img src="assets/drawing/blackwhite.jpg" alt="benimaru" />
+            <img src="assets/drawing/rimuru.jpg" alt="benimaru" />
+            <img src="assets/drawing/tanjiro.jpg" alt="benimaru" />
+          </div>
+          <p>
+            Do you want to make your own custom drawing ?, contact me on my
+            <a href="#mySocialMedia">social media...</a>
+          </p>
+          <div class="verticalLine"></div>
+          <h2>Progamming</h2>
+          <div class="content__progamming">
+            <img src="assets/web/beritamuweb.png" alt="" />
+            <img src="assets/web/tokoshop web.png" alt="" />
+            <p>This is simple web that i ever made.</p>
+          </div>
+          <div class="verticalLine"></div>
+          <h2>Still Continuing...</h2>
         </div>
+      </section>
+      <button class="totop">Back to Top</button>
+      <section class="form">
+        <h2>Ask me</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" /><br />
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" /><br />
+          <label for="gender">Gender :</label>
+           <input type="radio" id="female" name="gender" value="female" />  
+          <label for="female">perempuan</label>
+           <input type="radio" id="male" name="gender" value="male" />  
+          <label for="male">laki-laki</label><br />
+          <label for="message">Message :</label><br />
+          <textarea id="message" name="message" rows="4" cols="50"></textarea
+          ><br />
+          <button type="submit">Send</button>
+        </form>
       </section>
     </main>
 
