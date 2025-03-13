@@ -119,7 +119,7 @@ a{
   padding: 100px 100px 140px 100px;
   /* border: 5px solid black; */
   display: flex;
-  background-image: url("../assets/wave.svg");
+  background-image: url("../assets/Wave.svg");
   background-repeat: no-repeat;
   stroke: gray;
   background-position: bottom;
