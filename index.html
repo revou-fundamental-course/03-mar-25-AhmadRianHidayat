@@ -32,7 +32,7 @@
       <div>
         <a href="#">Home</a>
         <a href="#mySocialMedia">Our Profile</a>
-        <a href="#">Achievement</a>
+        <a href="#achievement">Achievement</a>
         <a href="#message">Message</a>
       </div>
     </header>
@@ -42,8 +42,8 @@
     <main class="main">
       <section class="home">
         <div>
-          <h1>Halo Tuan, Selamat Datang di Website Saya</h1>
-          <p>Ini adalah website portofolio saya...</p>
+          <h1>Hello Sir, Welcome to My Website</h1>
+          <p>This is my portfolio website...</p>
         </div>
         <img src="assets/icon kepala.png" alt="profile" />
       </section>
@@ -210,7 +210,9 @@
             <p>This is simple web that i ever made.</p>
           </div>
           <div class="verticalLine"></div>
-          <h2>Still Continuing...</h2>
+          <h2>Oops sorry...</h2>
+          <h2 id="achievement">The achievement page is under development.</h2>
+          <h1>Stay Tuned! <i class="fa-regular fa-face-smile-wink"></i></h1>
         </div>
       </section>
       <button id="totop">Back to Top</button>
@@ -219,25 +221,32 @@
         <div class="container-formsection">
           <form>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" /><br />
+            <input type="text" id="name" name="name"/><br />
             <label for="birthday">Birthday :</label>
             <input type="date" id="birthday" name="birthday" /><br />
             <label for="gender">Gender :</label><br />
              <input type="radio" id="female" name="gender" value="female" />  
-            <label for="female">perempuan</label>
+            <label for="female">female</label>
              <input type="radio" id="male" name="gender" value="male" />  
-            <label for="male">laki-laki</label><br />
-            <label for="message">Message :</label><br />
-            <textarea id="message" name="message" rows="4" cols="30"></textarea
+            <label for="male">male</label><br />
+            <label for="messageMe">Message :</label><br />
+            <textarea id="messageMe" name="messageMe" rows="4" cols="30"></textarea
             ><br />
-            <button type="submit">Send</button>
+            <button type="submit" id="btnSubmit">Send</button>
           </form>
           <div class="formresult">
-            <p>Name :</p>
-            <p>Birthday :</p>
-            <p>Gender :</p>
-            <p>Perempuan :</p>
-            <p>Message :</p>
+            <div>
+              <p>Name :</p>
+              <p>Birthday :</p>
+              <p>Gender :</p>
+              <p>Message :</p>
+            </div>
+            <div>
+              <p id="nameOutput"></p>
+              <p id="birthdayOutput"></p>
+              <p id="genderOutput"></p>
+              <p id="messageOutput"></p>
+            </div>
           </div>
         </div>
       </section>

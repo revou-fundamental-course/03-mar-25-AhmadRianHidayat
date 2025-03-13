@@ -76,3 +76,83 @@ const doToTop = () => {
 
 btnToTop.addEventListener('click',()=>{doToTop()})
 
+// this code for form handling
+let inputName = document.getElementById('name');
+let inputBirthday = document.getElementById('birthday');
+let inputGender = document.getElementsByName('gender');
+let inputTextArea = document.getElementById('messageMe');
+
+// this is for output handling
+let nameOutput = document.getElementById('nameOutput');
+let dateOutput = document.getElementById('birthdayOutput');
+let genderOutput = document.getElementById('genderOutput');
+let textAreaOutput = document.getElementById('messageOutput')
+
+let btnSubmit = document.getElementById('btnSubmit');
+
+const submitValue = () => {
+    // this code for, when i submit form, the website doesn't reload
+    event.preventDefault()
+
+    const errorMessage = []
+    let isValid = true;
+
+    // this is for name 
+    if(inputName.value === ""){
+        errorMessage.push("Name must be fill out!");
+        isValid = false;
+    }
+
+    // this is for date
+    if(inputBirthday.value === ""){
+        errorMessage.push("Birthday must be fill out!")
+        isValid = false;
+    }
+
+    // this is for gender
+    let indexRadio = -1;
+    for(let i = 0; i < inputGender.length; i++){
+        if(inputGender[i].checked === true){
+            indexRadio = i;
+            break
+        }
+    }
+    if(indexRadio === -1){
+        errorMessage.push("Gender must be selected!")
+        isValid = false;
+    }
+
+    // console.log(indexRadio)
+    // inputGender[indexRadio].checked = false;
+
+    // this is for text area
+    if(inputTextArea.value === ""){
+        errorMessage.push("Message must be fill out!")
+        isValid = false;
+    }
+
+    if(!isValid){
+        alert(errorMessage.join("\n"));
+    }
+
+    // this is to reset value when success
+    if(isValid){
+        // set value when user already fill all the input
+
+        nameOutput.textContent = inputName.value;
+        dateOutput.textContent = inputBirthday.value;
+        genderOutput.textContent = inputGender[indexRadio].value;
+        textAreaOutput.textContent = inputTextArea.value;
+        // formContainer.style.display = "flex";
+
+        //reset when succes
+        inputName.value="";
+        inputBirthday.value="";
+        if(indexRadio !== -1){
+            inputGender[indexRadio].checked = false;
+        }
+        inputTextArea.value="";
+    }
+}
+btnSubmit.addEventListener('click',()=>{submitValue()})
+// console.log(btnSubmit)
