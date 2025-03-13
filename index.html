@@ -42,7 +42,7 @@
     <main class="main">
       <section class="home">
         <div>
-          <h1>Hello Sir, Welcome to My Website</h1>
+          <h1>Hello <span id="userName">sasa</span>, Welcome to My Website</h1>
           <p>This is my portfolio website...</p>
         </div>
         <img src="assets/icon kepala.png" alt="profile" />
@@ -50,8 +50,9 @@
       <section class="ourProfile" id="mySocialMedia">
         <h1>About Me :</h1>
         <div class="ourprofile__myprofile">
-          <img src="assets/foto saya.jpg" alt="" />
-          <div class="myprofile__container">
+          <!-- section one -->
+          <div class="myprofile__one">
+            <img src="assets/foto saya.jpg" alt="" />
             <div class="myprofile__detail">
               <div>
                 <h1>Ahmad Rian Hidayat</h1>
@@ -79,60 +80,67 @@
                 >
               </div>
             </div>
-            <div class="myprofile__stats">
-              <h2>my stats (hardskill) :</h2>
-              <label for="resilience">resilience : </label>
-              <div>
-                <progress id="resilience" value="80" max="100"></progress>
-                <span>80%</span>
+          </div>
+
+          <!-- section two -->
+          <div class="myprofile__container">
+            <h2>My Stats</h2>
+            <div class="myprofile__innercontainer">
+              <div class="myprofile__stats">
+                <h2>hardskill :</h2>
+                <label for="resilience">resilience : </label>
+                <div>
+                  <progress id="resilience" value="80" max="100"></progress>
+                  <span>80%</span>
+                </div>
+                <label for="concentration">concentration : </label>
+                <div>
+                  <progress id="concentration" value="86" max="100"></progress>
+                  <span>86%</span>
+                </div>
+                <label for="adaptation">adaptation : </label>
+                <div>
+                  <progress id="adaptation" value="50" max="100"></progress>
+                  <span>50%</span>
+                </div>
+                <label for="humor">humor : </label>
+                <div>
+                  <progress id="humor" value="45" max="100"></progress>
+                  <span>45%</span>
+                </div>
+                <label for="luck">luck : </label>
+                <div>
+                  <progress id="luck" value="65" max="100"></progress>
+                  <span>65%</span>
+                </div>
               </div>
-              <label for="concentration">concentration : </label>
-              <div>
-                <progress id="concentration" value="86" max="100"></progress>
-                <span>86%</span>
-              </div>
-              <label for="adaptation">adaptation : </label>
-              <div>
-                <progress id="adaptation" value="50" max="100"></progress>
-                <span>50%</span>
-              </div>
-              <label for="humor">humor : </label>
-              <div>
-                <progress id="humor" value="45" max="100"></progress>
-                <span>45%</span>
-              </div>
-              <label for="luck">luck : </label>
-              <div>
-                <progress id="luck" value="65" max="100"></progress>
-                <span>65%</span>
-              </div>
-            </div>
-            <div class="myprofile__stats">
-              <h2>my stats (softskill) :</h2>
-              <label for="resilience">logic : </label>
-              <div>
-                <progress id="logic" value="80" max="100"></progress>
-                <span>80%</span>
-              </div>
-              <label for="communication">communication : </label>
-              <div>
-                <progress id="communication" value="30" max="100"></progress>
-                <span>30%</span>
-              </div>
-              <label for="social">social : </label>
-              <div>
-                <progress id="social" value="20" max="100"></progress>
-                <span>20%</span>
-              </div>
-              <label for="energy">energy : </label>
-              <div>
-                <progress id="energy" value="80" max="100"></progress>
-                <span>80%</span>
-              </div>
-              <label for="creativity">creativity : </label>
-              <div>
-                <progress id="creativity" value="75" max="100"></progress>
-                <span>30%</span>
+              <div class="myprofile__stats">
+                <h2>softskill :</h2>
+                <label for="resilience">logic : </label>
+                <div>
+                  <progress id="logic" value="80" max="100"></progress>
+                  <span>80%</span>
+                </div>
+                <label for="communication">communication : </label>
+                <div>
+                  <progress id="communication" value="30" max="100"></progress>
+                  <span>30%</span>
+                </div>
+                <label for="social">social : </label>
+                <div>
+                  <progress id="social" value="20" max="100"></progress>
+                  <span>20%</span>
+                </div>
+                <label for="energy">energy : </label>
+                <div>
+                  <progress id="energy" value="80" max="100"></progress>
+                  <span>80%</span>
+                </div>
+                <label for="creativity">creativity : </label>
+                <div>
+                  <progress id="creativity" value="75" max="100"></progress>
+                  <span>30%</span>
+                </div>
               </div>
             </div>
           </div>
@@ -207,11 +215,11 @@
           <div class="content__progamming">
             <img class="web-banner" src="assets/web/beritamuweb.png" alt="" />
             <img class="web-banner" src="assets/web/tokoshop web.png" alt="" />
-            <p>This is simple web that i ever made.</p>
+            <p  id="achievement">This is simple web that i ever made.</p>
           </div>
           <div class="verticalLine"></div>
           <h2>Oops sorry...</h2>
-          <h2 id="achievement">The achievement page is under development.</h2>
+          <h2>The achievement page is under development.</h2>
           <h1>Stay Tuned! <i class="fa-regular fa-face-smile-wink"></i></h1>
         </div>
       </section>
@@ -221,7 +229,7 @@
         <div class="container-formsection">
           <form>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name"/><br />
+            <input type="text" id="name" name="name" placeholder=" your name"/><br />
             <label for="birthday">Birthday :</label>
             <input type="date" id="birthday" name="birthday" /><br />
             <label for="gender">Gender :</label><br />
@@ -230,23 +238,25 @@
              <input type="radio" id="male" name="gender" value="male" />  
             <label for="male">male</label><br />
             <label for="messageMe">Message :</label><br />
-            <textarea id="messageMe" name="messageMe" rows="4" cols="30"></textarea
+            <textarea id="messageMe" name="messageMe" rows="4" cols="30" placeholder=" type here for detail..."></textarea
             ><br />
             <button type="submit" id="btnSubmit">Send</button>
           </form>
           <div class="formresult">
+            <h2>This is from</h2>
             <div>
-              <p>Name :</p>
-              <p>Birthday :</p>
-              <p>Gender :</p>
-              <p>Message :</p>
+              <span class="text">Name : </span><span id="nameOutput"></span><br>
+              <span class="text">Birthday : </span><span id="birthdayOutput"></span><br>
+              <span class="text">Gender : </span><span id="genderOutput"></span><br>
+              <span class="text">Message : </span>
+              <div class="messageBox"><p id="messageOutput"></p></div>
             </div>
-            <div>
+            <!-- <div>
               <p id="nameOutput"></p>
               <p id="birthdayOutput"></p>
               <p id="genderOutput"></p>
               <p id="messageOutput"></p>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>

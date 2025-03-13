@@ -1,5 +1,13 @@
 // ini file javascriptnya
 
+let userName = document.getElementById('userName')
+let userNameInput = prompt("Hello what is your name? ",)
+if (!userNameInput){
+    userName.textContent = "There";
+}else{
+    userName.textContent = userNameInput;
+}
+
 // this code for slide show drawing contentme('drawing-banner')
 let bannerIndex = 0;
 const nextBanner = () => {
